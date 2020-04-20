@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { View, StyleSheet } from "react-native";
 import { Video } from "expo-av";
 
 interface Props {
   src: string;
+  onHeader: boolean;
 }
 
-const BackVideo = ({ src }: Props) => {
+const BackVideo = ({ src, onHeader }: Props) => {
+  const [mute, setMute] = useState(false);
   return (
     <View style={styles.container}>
       <Video
@@ -15,10 +17,10 @@ const BackVideo = ({ src }: Props) => {
         }}
         rate={1.0}
         volume={1.0}
-        isMuted={false}
+        isMuted={mute}
         resizeMode="contain"
         isLooping
-        shouldPlay
+        shouldPlay={!onHeader}
         style={styles.viedo}
       />
     </View>

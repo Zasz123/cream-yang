@@ -28,15 +28,11 @@ const DetailScreen = ({ navigation, route }: Props) => {
     data[data.findIndex((item: any) => item.id === nowItem.item?.id)];
 
   const [onHeader, setOnHeader] = useState(false);
-  const [size, setSize] = useState({
-    mapHeight: HEIGHT / 2,
-    height: HEIGHT / 2,
-  });
 
   const onScroll = (e: NativeSyntheticEvent<NativeScrollEvent>) => {
     const { y } = e.nativeEvent.contentOffset;
 
-    if (y >= 90) {
+    if (y >= 400) {
       setOnHeader(true);
     } else {
       setOnHeader(false);
@@ -68,7 +64,7 @@ const DetailScreen = ({ navigation, route }: Props) => {
   return (
     <View style={styles.container}>
       <View style={styles.video}>
-        <BackgroundViedo src={nowData.src} />
+        <BackgroundViedo src={nowData.src} onHeader={onHeader} />
       </View>
       <View style={styles.detail} pointerEvents="box-none">
         <ScrollView onScroll={onScroll} scrollEventThrottle={100}>

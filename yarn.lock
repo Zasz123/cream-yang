@@ -4741,6 +4741,11 @@ readable-stream@^2.0.1, readable-stream@^2.2.2, readable-stream@~2.3.6:
     string_decoder "~1.1.1"
     util-deprecate "~1.0.1"
 
+reanimated-bottom-sheet@^1.0.0-alpha.19:
+  version "1.0.0-alpha.19"
+  resolved "https://registry.yarnpkg.com/reanimated-bottom-sheet/-/reanimated-bottom-sheet-1.0.0-alpha.19.tgz#94ea79e7b2896b8f489547415d15d15c99ac44ba"
+  integrity sha512-Q0sGUHYdr5h2n/AY7pKQty35zcUAxxYM1nCl+luSQAyqiY6a5Kf8IBQRsOVvs60sDzqXxtbwxHgM5mkwaiQC4Q==
+
 redux@^4.0.0, redux@^4.0.5:
   version "4.0.5"
   resolved "https://registry.yarnpkg.com/redux/-/redux-4.0.5.tgz#4db5de5816e17891de8a80c424232d06f051d93f"

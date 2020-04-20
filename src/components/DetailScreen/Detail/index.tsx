@@ -31,7 +31,7 @@ const Detail = ({ id, name, info, tag, src, beforeVideo }: Item) => {
 const styles = StyleSheet.create({
   contianer: {
     flex: 1,
-    marginTop: 100,
+    marginTop: 420,
     backgroundColor: "white",
     padding: 20,
     borderTopLeftRadius: 40,
